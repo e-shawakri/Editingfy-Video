@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Emadyous Development
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.wave.MultiWaveHeader
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:mwhStartColor="@color/main"
+        app:mwhCloseColor="@color/main1"
+        app:mwhColorAlpha="0.55"
+        app:mwhGradientAngle="90"
+        app:mwhIsRunning="true"
+        app:mwhProgress="1"
+        app:mwhVelocity="1"
+        app:mwhWaveHeight="45dp"
+        app:mwhWaves="MultiWave"/>
+
+    <com.scwang.wave.MultiWaveHeader
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:scaleY="-1"
+        app:mwhStartColor="@color/main"
+        app:mwhCloseColor="@color/main1"
+        app:mwhColorAlpha="0.55"
+        app:mwhGradientAngle="90"
+        app:mwhIsRunning="true"
+        app:mwhProgress="1"
+        app:mwhVelocity="1"
+        app:mwhWaveHeight="45dp"
+        app:mwhWaves="MultiWave"/>
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="144dp"
+            android:layout_height="123dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_logo_vector"
+            app:tint="@color/main" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="24sp"
+            android:text="@string/app_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

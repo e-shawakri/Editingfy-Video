@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Emadyous Development
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="audio"
+            type="com.emadyous.editingfyVideos.model.AudioData" />
+    </data>
+
+    <RelativeLayout
+        android:background="?selectableItemBackground"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="2dp">
+
+            <ImageView
+                android:id="@+id/audio_preview"
+                android:layout_width="64dp"
+                android:layout_height="64dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/pl"
+            android:layout_toStartOf="@id/audio_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/audio_title"
+                android:text="@{audio.title}"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <TextView
+                android:id="@+id/audio_artist"
+                android:text="@{audio.artist}"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:fontFamily="@font/roboto"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/audio_duration"
+            android:text="@{audio.duration}"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/roboto"/>
+
+    </RelativeLayout>
+
+</layout>

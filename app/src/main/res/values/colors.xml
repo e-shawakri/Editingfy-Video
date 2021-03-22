@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Emadyous Development
+  -->
+
+<resources>
+
+    <color name="colorPrimary">#FF6C00</color>
+    <color name="colorPrimaryDark">#FF6C00</color>
+    <color name="colorAccent">#FF6C00</color>
+    <color name="colorAccentTras">#25FF6C00</color>
+
+    <color name="main">#FF6C00</color>
+    <color name="main1">#E37220</color>
+
+
+
+
+</resources>

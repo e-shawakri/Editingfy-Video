@@ -1,0 +1,6 @@
+/*
+ * Copyright (c) Emadyous Development
+ */
+
+rootProject.name='videoEditingfy'
+include ':app'

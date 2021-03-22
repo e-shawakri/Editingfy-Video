@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "500579279173",
+    "project_id": "editingfy-videos",
+    "storage_bucket": "editingfy-videos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500579279173:android:4260e2a624d1269e175e2c",
+        "android_client_info": {
+          "package_name": "com.emadyous.editingfyVideos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500579279173-b9ig2tv7634k9qh4s6e7b3m4tug1iibk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmLWAP5heauCdrZcVhkESP67k1m5kjxOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500579279173-b9ig2tv7634k9qh4s6e7b3m4tug1iibk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Emadyous Development
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+<!--            <ProgressBar-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:layout_margin="24dp"/>-->
+
+            <RelativeLayout
+                android:layout_margin="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/progress_circle"
+                    android:progress="0"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="24dp"/>
+
+                <TextView
+                    android:id="@+id/progress_text_bar"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/progress_bar"-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="120dp"-->
+<!--                android:indeterminateOnly="false"-->
+<!--                android:progressDrawable="@drawable/progress_circle"-->
+<!--                android:progress="10"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:layout_margin="24dp"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/progress_bar"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/progress_bar"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/progress_bar"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/progress_bar"-->
+
+<!--                android:text="10%"-->
+<!--                android:fontFamily="@font/roboto_medium"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textAppearance="@style/TextAppearance.AppCompat.Large" />-->
+
+            <TextView
+                android:id="@+id/progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Please wait..."
+                android:paddingHorizontal="16dp"
+                android:textColor="#2B2B2B"
+                android:fontFamily="@font/roboto"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/cancel"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@android:color/white"
+                android:text="Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
